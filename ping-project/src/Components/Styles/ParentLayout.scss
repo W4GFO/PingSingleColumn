@@ -1,0 +1,19 @@
+@import './AllComponentsStyle.scss';
+
+main {
+	width: 98vw;
+	height: 100vh;
+	background-color:cornflowerblue;
+}
+
+header {
+	text-align: center;
+}
+
+@media screen and (min-width:$BreakPoint) {
+	main {
+		width: 60vw;
+		height: 80vh;
+		background-color:darkcyan;
+	}
+}

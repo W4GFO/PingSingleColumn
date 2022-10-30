@@ -1,0 +1,74 @@
+@import './AllComponentsStyle.scss';
+
+$InputsMarginSpacing:8px;
+$InputsBorderRadius:25px;
+$InputsWidthPercentage:78%;
+
+form {
+	display: flex;
+	flex-direction: column;
+
+	gap:calc($InputsBorderRadius / 2.0);
+	margin-top: calc($TopMarginMinMultiple * 4);
+}
+
+.primary-input {
+	flex: 1;
+	text-align: center;
+}
+
+.primary-action {
+	flex: 1;
+	text-align: center;
+}
+
+.primary-input input {
+	height: 38px;
+	width: $InputsWidthPercentage;
+
+	border: 1px solid blue;
+	font-size:medium;
+	padding-left: 50px;
+	border-radius: $InputsBorderRadius;
+}
+
+.primary-action button {
+	height: 40px;
+	width: $InputsWidthPercentage;
+
+	border: none;
+	color: white;
+	background-color:blue;
+	font-weight: $FontWeightLite;
+	border-radius: $InputsBorderRadius;
+}
+
+@media screen and (min-width:$BreakPoint) {
+	form {
+		flex-direction: row;
+		margin-top: calc($TopMarginMinMultiple * 6);
+	}
+
+	.primary-input {
+		flex: 2;
+		text-align: end;
+	}
+
+	.primary-action {
+		flex: 1;
+		text-align: start;
+	}
+
+	.primary-input input {
+		width: 75%;
+		padding-left: 50px;
+		height: $InputElementHeight;
+		margin-right: $InputsMarginSpacing;
+	}
+
+	.primary-action button {
+		width: 65%;
+		height: $InputElementHeight;
+		margin-left: $InputsMarginSpacing;
+	}
+}
