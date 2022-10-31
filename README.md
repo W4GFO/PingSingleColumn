@@ -58,7 +58,7 @@ This project contains the following components:
 
 	What is typically the issues you see developers are making when this is happening?
 
-	Any input would be greaty appreciated as I run into this alot.
+	Any input would be greatly appreciated as I run into this a lot.
 
 ### `npm run build`
 
