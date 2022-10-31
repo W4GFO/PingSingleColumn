@@ -3,17 +3,41 @@
 main {
 	width: 98vw;
 	height: 100vh;
-	background-color:cornflowerblue;
+	background-color:white;
 }
 
 header {
 	text-align: center;
 }
 
+figure {
+	margin-top:calc($TopMarginMinMultiple * 10);
+}
+
+figure img {
+	width: 86%;
+	margin: auto;
+	display: block;
+}
+
 @media screen and (min-width:$BreakPoint) {
 	main {
-		width: 60vw;
-		height: 80vh;
-		background-color:darkcyan;
+		width: 68vw;
+		height: 90vh;
+
+		max-width: 1000px;
+		max-height: 675px;
+
+		box-shadow: 10px 10px 45px 1px gray;
+	}
+
+	figure {
+		margin-top: calc($TopMarginMinMultiple * 6);
+	}
+
+	figure img {
+		width: 48%;
+		margin: auto;
+		display: block;
 	}
 }
