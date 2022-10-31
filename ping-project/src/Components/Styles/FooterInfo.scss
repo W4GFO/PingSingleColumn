@@ -1,0 +1,58 @@
+@import './AllComponentsStyle.scss';
+
+.footer-info {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	margin-top: calc($TopMarginMinMultiple * 14);
+}
+
+.social-icons {
+	display: flex;
+	flex-direction: row;
+}
+
+.social-icon{
+	flex: 1;
+	color: blue;
+}
+
+.fb-icon {
+	text-align: end;
+}
+
+.tw-icon {
+	text-align: center;
+}
+
+.ig-icon {
+	text-align: start;
+}
+
+.footer-info p {
+	width: 100%;
+	font-size: 0.4em;
+	text-align: center;
+	margin-top: calc($TopMarginMinMultiple * 1);
+}
+
+.social-icon a {
+	color: inherit;
+}
+
+@media screen and (min-width:$BreakPoint) {
+	.footer-info {
+		width: 25%;
+		margin-top: calc($TopMarginMinMultiple * 7);
+	}
+
+	.footer-info p {
+		font-size: 0.6em;
+		color: $PrimaryGray;
+		margin-top: calc($TopMarginMinMultiple * 1);
+	}
+}

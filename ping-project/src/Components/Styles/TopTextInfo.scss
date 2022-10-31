@@ -1,0 +1,43 @@
+@import './AllComponentsStyle.scss';
+
+.app-logo {
+	width: 55px;
+	margin-top: calc($TopMarginMinMultiple * 8);
+}
+
+.primary-message {
+	font-size: 1.3em;
+	color: $PrimaryGray;
+	font-weight: $FontWeightLite;
+
+	margin-top: calc($TopMarginMinMultiple * 6);
+}
+
+.secondary-message {
+	font-size: 0.7em;
+	font-weight: $FontWeightLite;
+	margin-top: calc($TopMarginMinMultiple * 2);
+}
+
+.dark-text {
+	color: $PrimaryVeryDarkBlue;
+	font-weight: $FontWeightHeavy;
+}
+
+//Desktop
+@media screen and (min-width:$BreakPoint) {
+	.app-logo {
+		width: 65px;
+		margin-top: calc($TopMarginMinMultiple * 8);
+	}
+
+	.primary-message {
+		font-size: 1.5em;
+		margin-top: calc($TopMarginMinMultiple * 2);
+	}
+
+	.secondary-message {
+		font-size: 0.8em;
+		margin-top: calc($TopMarginMinMultiple * 1);
+	}
+}
