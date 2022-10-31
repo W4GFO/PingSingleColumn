@@ -40,6 +40,10 @@
 	margin-top: calc($TopMarginMinMultiple * 1);
 }
 
+.social-icon a {
+	color: inherit;
+}
+
 @media screen and (min-width:$BreakPoint) {
 	.footer-info {
 		width: 25%;

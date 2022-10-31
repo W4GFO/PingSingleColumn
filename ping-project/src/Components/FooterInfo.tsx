@@ -9,15 +9,21 @@ export const FooterInfo = (props: FooterInfoProps) => {
 			<div className='social-icons'>
 
 				<div className='social-icon fb-icon'>
-					<FaFacebook />
+					<a href='https://www.facebook.com' rel='noopener noreferrer' target='_blank'>
+						<FaFacebook />
+					</a>
 				</div>
 				
 				<div className='social-icon tw-icon'>
-					<FaTwitter />
+					<a href='https://www.twitter.com' rel='noopener noreferrer' target='_blank'>
+						<FaTwitter />
+						</a>
 				</div>
 				
 				<div className='social-icon ig-icon'>
-					<FaInstagram />
+					<a href='https://www.instagram.com/' rel='noopener noreferrer' target='_blank'>
+						<FaInstagram />
+					</a>
 				</div>
 
 			</div>
